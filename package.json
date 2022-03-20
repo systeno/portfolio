@@ -6,7 +6,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "deploy": "sh deploy.sh",
     "dev": "vue-tsc --noEmit && vite build && vite",
-    "gh-pages-deploy": "node scripts/gh-pages-deploy.js",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
   },
