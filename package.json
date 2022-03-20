@@ -4,7 +4,7 @@
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "deploy": "sh deploy.sh",
+    "deploy": "sh src/scripts/deploy.sh",
     "dev": "vue-tsc --noEmit && vite build && vite",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
