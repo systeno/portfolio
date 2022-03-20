@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Heading</h1>
+  <h1>Super Heading</h1>
   <h2>Heading</h2>
   <h3>Heading</h3>
   <h4>Heading</h4>
