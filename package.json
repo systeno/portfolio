@@ -2,12 +2,13 @@
   "name": "systeno",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vue-tsc --noEmit && vite build && vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview --port 5050",
-    "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "deploy": "sh deploy.sh"
+    "deploy": "sh deploy.sh",
+    "dev": "vue-tsc --noEmit && vite build && vite",
+    "gh-pages-deploy": "node scripts/gh-pages-deploy.js",
+    "preview": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "milligram": "^1.4.1",
@@ -21,11 +22,15 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",
     "@vue/tsconfig": "^0.1.3",
+    "chalk": "^4.0.0",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
+    "execa": "^4.0.0",
+    "node-emoji": "^1.10.0",
     "prettier": "^2.5.1",
     "typescript": "~4.5.5",
     "vite": "^2.8.4",
+    "vue-cli-plugin-gh-pages-auto-deploy": "~0.5.0",
     "vue-tsc": "^0.31.4"
   }
 }
